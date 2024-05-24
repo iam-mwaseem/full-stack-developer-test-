@@ -35,8 +35,8 @@ The intended purpose is to test your backend skills, ranging from System design,
 
 ## How to run?
 
-1.npm run start [To start the server] 2.http://127.0.0.1:3000/api/v1/auth/signup [To signup user] 3.http://127.0.0.1:3000/api/v1/auth/signin [To login user]
-[User must be login to access this below route cause it's protected] 4.http://127.0.0.1:3000/api/v1/category/load_categories [To load/fetch categories from external/provided api]
+1.npm run start [To start the server] 2.http://127.0.0.1:3000/v1/auth/signup [To signup user] 3.http://127.0.0.1:3000/api/auth/signin [To login user]
+[User must be login to access this below route cause it's protected] 4.http://127.0.0.1:3000/api/load/categories [To load/fetch categories from external/provided api]
 
 ## Deadline
 

@@ -10,9 +10,9 @@ const form = multer();
 app.use(express.json());
 app.use(form.array());
 
-app.use("/api/v1/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 app.use(authController.protect);
 
 //Protected route
-app.use("/api/v1/categorey", categoriesRoutes);
+app.use("/api", categoriesRoutes);
 module.exports = app;

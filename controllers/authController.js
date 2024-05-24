@@ -1,4 +1,4 @@
-const User = require("./../models/userModel");
+const User = require("../models/user");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
@@ -65,7 +65,6 @@ exports.protect = async (req, res, next) => {
   }
 
   const decoded = await jwt.verify(token, process.env.JWT_SECRET);
-  console.log(decoded.iat);
 
   //Check if user still exist
   let currentUser = await User.findById(decoded.id);
